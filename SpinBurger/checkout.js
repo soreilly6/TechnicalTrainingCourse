@@ -77,8 +77,6 @@ function Add(productid,buttonId) {
   let productPrice = data.product[productid].price;
   let productName = data.product[productid].productName;
   
-  sendAddEvent(productType,item_id,productCurrency, productPrice, productid, productName)
-  
 }
 
 
@@ -136,8 +134,5 @@ function Checkout() {
 
     Remove(productElement)
   }
-  
-  sendConfirmEvent(confirmedProducts)
-  sentCheckoutEvent()
   
 }
