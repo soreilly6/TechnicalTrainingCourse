@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spin Burger</title>
+    <link rel="stylesheet" href="style.css"> <!-- https://fontawesome.com/ -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet" /> <!-- https://fonts.google.com/ -->
+  
+    <link rel="stylesheet" href="style2.css">
+   
+</head>
+<body>
+  <div class="tm-container">
+    <div class="tm-row">
+      <!-- Site Header -->
+      <div class="tm-left">
+        <div class="tm-left-inner">
+          <div class="tm-site-header">
+            <i class="fas fa-coffee fa-3x tm-site-logo"></i>
+            <h1 class="tm-site-name">Spin Burger</h1>
+          </div>
+          <nav class="tm-site-nav">
+            <ul class="tm-site-nav-ul">
+              <li class="tm-page-nav-item">
+                <a href="#drink" class="tm-page-link active">
+                  <i class="fas fa-mug-hot tm-page-link-icon"></i>
+                  <span>Menu</span>
+                </a>
+              </li>
+              <li class="tm-page-nav-item">
+                <a href="#about" class="tm-page-link">
+                  <i class="fas fa-users tm-page-link-icon"></i>
+                  <span>About Us</span>
+                </a>
+              </li>
+              <li class="tm-page-nav-item">
+                <a href="#basket" class="tm-page-link">
+                  <i class="fas fa-glass-martini tm-page-link-icon"></i>
+                  <span id="basketMenu">Checkout</span>
+                </a>
+              </li>
+              <li class="tm-page-nav-item">
+                <a href="#contact" class="tm-page-link">
+                  <i class="fas fa-comments tm-page-link-icon"></i>
+                  <span>Login</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>        
+      </div>
+      <div class="tm-right">
+        <main class="tm-main">
+          <div id="drink" class="tm-page-content">
+            <!--  Menu Page -->
+            <nav class="tm-black-bg tm-drinks-nav">
+              <ul>
+                <li>
+                  <a href="#" class="tm-tab-link active" data-id="burgers">Burgers</a>
+                </li>
+                <li>
+                  <a href="#" class="tm-tab-link" data-id="sides">Sides</a>
+                </li>
+                <li>
+                  <a href="#" class="tm-tab-link" data-id="drinks">Drinks</a>
+                </li>
+              </ul>
+            </nav>
+
+            <div id="burgers" class="tm-tab-content">
+              <div class="tm-list">
+                <div class="tm-list-item">          
+                  <img src="https://cdn.glitch.me/ed0af3cb-3d61-45d0-8687-6868bf4a89a8%2Fturkey-burger-12.jpeg?v=1636046678187" alt="Image" class="tm-list-item-img">
+                  <div class="tm-black-bg tm-list-item-text">
+                    <h3 class="tm-list-item-name">Classic Burger<span class="tm-list-item-price">$6.50</span></h3>
+                    <p class="tm-list-item-description">Classic juicy meaty beef burger, with onions, tomatoes and fresh lettuce</p>
+                    <form class="add-button" action="javascript:Add('BURGER_1', 'burger1Button')">
+                      <p><button id = burger1Button>Add to basket</button></p>
+                    </form>
+                  </div>
+
+                </div>
+                <div class="tm-list-item">          
+                  <img src="https://cdn.glitch.me/ed0af3cb-3d61-45d0-8687-6868bf4a89a8%2FScreenshot%202021-11-08%20at%2012.41.06.png?v=1636375284011" alt="Image" class="tm-list-item-img">
+                  <div class="tm-black-bg tm-list-item-text">
+                    <h3 class="tm-list-item-name">Cheese Burger<span class="tm-list-item-price">$7.00</span></h3>
+                    <p class="tm-list-item-description">Classic juicy meaty beef burger topped with delicious melting chedder cheese</p>
+                    <form class="add-button" action="javascript:Add('BURGER_2', 'burger2Button')">
+                      <p><button id = burger2Button>Add to basket</button></p>
+                    </form>
+                  </div>
+                </div>
+                <div class="tm-list-item">          
+                  <img src="https://cdn.glitch.me/ed0af3cb-3d61-45d0-8687-6868bf4a89a8%2FScreenshot%202021-11-08%20at%2012.42.02.png?v=1636375340639" alt="Image" class="tm-list-item-img">
+                  <div class="tm-black-bg tm-list-item-text">
+                    <h3 class="tm-list-item-name">Chicken Burger<span class="tm-list-item-price">$7.00</span></h3>
+                    <p class="tm-list-item-description">Crispy seasoned chicken breast,  piled onto soft rolls with onion, avocado, lettuce, tomato and garlic mayo</p>
+                    <form class="add-button" action="javascript:Add('BURGER_3', 'burger3Button')">
+                      <p><button id = burger3Button>Add to basket</button></p>
+                    </form>
+                  </div>
+                </div>
+                <div class="tm-list-item">          
+                  <img src="https://cdn.glitch.me/ed0af3cb-3d61-45d0-8687-6868bf4a89a8%2FScreenshot%202021-11-08%20at%2012.39.45.png?v=1636375225042" alt="Image" class="tm-list-item-img">
+                  <div class="tm-black-bg tm-list-item-text">
+                    <h3 class="tm-list-item-name">Veggie Burger<span class="tm-list-item-price">$7.99</span></h3>
+                    <p class="tm-list-item-description">Packed with flavour, these vegan bean burgers are healthy and seriously satisfying</p>
+                    <form class="add-button" action="javascript:Add('BURGER_4', 'burger4Button')">
+                      <p><button id = burger4Button>Add to basket</button></p>
+                    </form>
+                  </div>
+                </div>    
+              </div>
+            </div> 
+
+            <div id="sides" class="tm-tab-content">
+              <div class="tm-list">
+                <div class="tm-list-item">          
+                  <img src="https://cdn.glitch.me/ed0af3cb-3d61-45d0-8687-6868bf4a89a8%2FFrench-fries-b9e3e0c.jpeg?v=1636373214284" alt="Image" class="tm-list-item-img">
+                  <div class="tm-black-bg tm-list-item-text">
+                    <h3 class="tm-list-item-name">Fries<span class="tm-list-item-price">$2.35</span></h3>
+                    <p class="tm-list-item-description">Prepared by cutting the potato into even strips, then drying and frying it in a deep fryer</p>
+                    <form class="add-button" action="javascript:Add('SIDE_1', 'side1Button')">
+                      <p><button id = side1Button>Add to basket</button></p>
+                    </form>
+                  </div>
+                </div>  
+                <div class="tm-list-item">          
+                  <img src="https://cdn.glitch.me/ed0af3cb-3d61-45d0-8687-6868bf4a89a8%2Fbaked-sweet-potato-fries-5.jpeg?v=1636373338736" alt="Image" class="tm-list-item-img">
+                  <div class="tm-black-bg tm-list-item-text">
+                    <h3 class="tm-list-item-name">Sweet Potato Fries<span class="tm-list-item-price">$2.99</span></h3>
+                    <p class="tm-list-item-description">A variation of French fries using sweet potato instead of potato. Served lightly salted</p>
+                    <form class="add-button" action="javascript:Add('SIDE_2', 'side2Button')">
+                      <p><button id = side2Button>Add to basket</button></p>
+                    </form>
+                  </div>
+                </div>
+                <div class="tm-list-item">          
+                  <img src="https://cdn.glitch.me/ed0af3cb-3d61-45d0-8687-6868bf4a89a8%2Fhot-and-tasty-onion-rings-2.jpeg?v=1636373650148" alt="Image" class="tm-list-item-img">
+                  <div class="tm-black-bg tm-list-item-text">
+                    <h3 class="tm-list-item-name">Onion Rings<span class="tm-list-item-price">$2.50</span></h3>
+                    <p class="tm-list-item-description">Onion dipped in batter or bread crumbs and then deep fried</p>
+                    <form class="add-button" action="javascript:Add('SIDE_3', 'side3Button')">
+                      <p><button id = side3Button>Add to basket</button></p>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="drinks" class="tm-tab-content">
+              <div class="tm-list">
+                <div class="tm-list-item">          
+                  <img src="https://cdn.glitch.me/ed0af3cb-3d61-45d0-8687-6868bf4a89a8%2FAU00099-X.jpeg?v=1636374094065" alt="Image" class="tm-list-item-img">
+                  <div class="tm-black-bg tm-list-item-text">
+                    <h3 class="tm-list-item-name">Coca Cola<span class="tm-list-item-price">$0.95</span></h3>
+                    <p class="tm-list-item-description">A 330ml can of Coca Cola</p>
+                    <form class="add-button" action="javascript:Add('DRINK_1', 'drink1Button')">
+                      <p><button id = drink1Button>Add to basket</button></p>
+                    </form>
+                  </div>
+                </div>
+                <div class="tm-list-item">          
+                  <img src="https://cdn.glitch.me/ed0af3cb-3d61-45d0-8687-6868bf4a89a8%2FUltimate-Nutella-Milkshake-square.jpeg?v=1636374284631" alt="Image" class="tm-list-item-img">
+                  <div class="tm-black-bg tm-list-item-text">
+                    <h3 class="tm-list-item-name">Milkshake<span class="tm-list-item-price">$2.50</span></h3>
+                    <p class="tm-list-item-description">This is the ultimate Nutella milkshake recipe. It's creamy, rich and nutty</p>
+                    <form class="add-button" action="javascript:Add('DRINK_2', 'drink2Button')">
+                      <p><button id = drink2Button>Add to basket</button></p>
+                    </form>
+                  </div>
+                </div>
+                <div class="tm-list-item">          
+                  <img src="https://cdn.glitch.me/ed0af3cb-3d61-45d0-8687-6868bf4a89a8%2Fscrew-top-gettyimages-85210965.jpeg?v=1636374194027" alt="Image" class="tm-list-item-img">
+                  <div class="tm-black-bg tm-list-item-text">
+                    <h3 class="tm-list-item-name">Water<span class="tm-list-item-price">$1.05</span></h3>
+                    <p class="tm-list-item-description">A 500ml bottle of spring water</p>
+                    <form class="add-button" action="javascript:Add('DRINK_3', 'drink3Button');">
+                      <p><button id = drink3Button>Add to basket</button></p>
+                    </form>
+                  </div>
+                </div>   
+              </div>
+            </div>
+            <!-- end  Menu Page -->
+          </div>
+
+          <!-- About Us Page -->
+          <div id="about" class="tm-page-content">
+            <div class="tm-black-bg tm-mb-20 tm-about-box-1">              
+              <h2 class="tm-text-primary tm-about-header">About Wave Cafe</h2>
+              <div class="tm-list-item tm-list-item-2">                
+                <img src="https://cdn.glitch.me/1f754e20-cea6-4980-a548-b5284a0ba764%2Fannie-s-burger-shack.jpeg?v=1636460797423" alt="Image" class="tm-list-item-img tm-list-item-img-big">
+                <div class="tm-list-item-text-2">
+                  <p>Wave Cafe is a one-page video background HTML CSS template from Tooplate. You can use this for your business websites.</p>
+                  <p>You can also use this for your client websites which you get paid for your website services. Please tell your friends about us.</p>
+                </div>                
+              </div>
+            </div>
+            <div class="tm-black-bg tm-mb-20 tm-about-box-2">              
+              <div class="tm-list-item tm-list-item-2">                
+                <div class="tm-list-item-text-2">
+                  <h2 class="tm-text-primary">How we began</h2>
+                  <p>If you wish to support us, please contact Tooplate. Thank you. Duis bibendum erat nec ipsum consectetur sodales.</p>                  
+                </div>                
+                <img src="https://cdn.glitch.me/1f754e20-cea6-4980-a548-b5284a0ba764%2Fimage.jpeg?v=1636460803569" alt="Image" class="tm-list-item-img tm-list-item-img-big tm-img-right">                
+              </div>
+              <p>Donec non urna elit. Quisque ut magna in dui mattis iaculis eu finibus metus. Suspendisse vel mi a lacus finibus vehicula vel ut diam. Nam pellentesque, mi quis ullamcorper.</p>
+            </div>
+          </div>
+          <!-- end About Us Page -->
+
+          <!-- Basket -->
+          <div id="basket" class="tm-page-content">
+            <div class="tm-list-item">          
+              <div class="tm-black-bg tm-list-item-text">
+                <h3 class="tm-list-item-name">Total<span id= "checkoutPrice" class="tm-list-item-price">$0</span></h3>
+              </div>
+            </div>   
+            <form class="checkout-button" action="javascript:Checkout()">
+                  <p><button>Checkout</button></p>
+              </form>
+          </div>
+          <!-- end Basket Page -->
+
+          <!-- login Page -->
+          <div id="contact" class="tm-page-content">
+            <div class="tm-black-bg tm-contact-form-container tm-align-right">
+              <form id="contact-form" onsubmit="javascript:login(email.value); this.reset(); return false;">
+                <div class="tm-form-group">
+                  <input type="text" name="name" class="tm-form-control" placeholder="Name"  required="" />
+                </div>
+                <div class="tm-form-group">
+                  <input type="email" name="email" class="tm-form-control" placeholder="Email" id = "email" required="" />
+                </div>        
+                <div class="tm-form-group tm-mb-30">
+                  <textarea rows="6" name="Address" class="tm-form-control" placeholder="Address" required=""></textarea>
+                </div>        
+                <div>
+                  <button type="submit" class="tm-btn-primary tm-align-right">
+                    Submit
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <!-- end login Page -->
+        </main>
+      </div>    
+    </div>
+  </div>
+    
+
+  <script src="script.js"></script>  
+  <script src="product_details.js"></script> 
+  <script src="checkout.js"></script> 
+  <script src="Sitecore-WebTags.js"></script> 
+
+  
+  <script>
+
+    function openTab(evt, id) {
+      $('.tm-tab-content').hide();
+      $('#' + id).show();
+      $('.tm-tab-link').removeClass('active');
+      $(evt.currentTarget).addClass('active');
+    }    
+
+    function initPage() {
+      let pageId = location.hash;
+
+      if(pageId) {
+        highlightMenu($(`.tm-page-link[href^="${pageId}"]`)); 
+        showPage($(pageId));
+      }
+      else {
+        pageId = $('.tm-page-link.active').attr('href');
+        showPage($(pageId));
+      }
+    }
+
+    function highlightMenu(menuItem) {
+      $('.tm-page-link').removeClass('active');
+      menuItem.addClass('active');
+    }
+
+    function showPage(page) {
+      $('.tm-page-content').hide();
+      page.show();
+    }
+
+    $(document).ready(function(){
+
+      /***************** Pages *****************/
+
+      initPage();
+
+      $('.tm-page-link').click(function(event) {
+        
+        if(window.innerWidth > 991) {
+          event.preventDefault();
+        }
+
+        highlightMenu($(event.currentTarget));
+        showPage($(event.currentTarget.hash));
+      });
+
+      
+      /***************** Tabs *******************/
+
+      $('.tm-tab-link').on('click', e => {
+        e.preventDefault(); 
+        openTab(e, $(e.target).data('id'));
+      });
+
+      $('.tm-tab-link.active').click(); // Open default tab
+
+
+      /************** background *********/
+
+      const video = document.getElementById("tm-video");
+    });
+      
+  </script>
+</body>
+</html>
